@@ -1,0 +1,41 @@
+.Reset{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Reset .reset-form{
+    /* width: 500px;
+    height: 400px; */
+    /* background: white; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Reset .reset-form input{
+    /* width: 500px;
+    height: 400px; */
+    /* background: white; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #979191;
+}
+
+.Reset .reset-form button{
+    /* width: 500px;
+    height: 400px; */
+    /* background: white; */
+    margin-top: -20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #979191;
+    cursor: pointer;
+}
+.Reset .reset-form button:hover{
+    background-color: rgb(132, 255, 255);
+    transition-duration: 2s;
+}
