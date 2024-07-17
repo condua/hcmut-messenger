@@ -21,7 +21,7 @@ return(
     <section className="Reset">
         <h1>Forgot Password</h1>
         <form className="reset-form" onSubmit={(e)=>handleSubmit(e)}>
-            <input name="email" /><br/><br/>
+            <input name="email" placeholder="Enter your email"/><br/><br/>
             <button>Reset</button>
         </form>
     </section>
