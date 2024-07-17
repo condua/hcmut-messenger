@@ -26,6 +26,7 @@ const Register = () => {
     setData({ ...data, error: null, loading: true });
     if (!name || !email || !password) {
       setData({ ...data, error: "All fields are required" });
+      return
     }
     try {
       const result = await createUserWithEmailAndPassword(
