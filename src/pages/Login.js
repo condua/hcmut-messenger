@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { updateDoc, doc } from "firebase/firestore";
@@ -15,11 +15,15 @@ const Login = () => {
   const history = useHistory();
 
   const { email, password, error, loading } = data;
-
+  
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
-
+  useEffect(()=>{
+    if(auth.currentUser){
+      history.replace('/')
+    }
+  },[history])
   const handleSubmit = async (e) => {
     e.preventDefault();
     setData({ ...data, error: null, loading: true });
